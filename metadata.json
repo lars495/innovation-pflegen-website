@@ -1,0 +1,8 @@
+{
+  "name": "Innovation Pflegen",
+  "description": "Eine moderne Plattform für Projektmanagement und digitale Transformation in der Pflegebranche.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
