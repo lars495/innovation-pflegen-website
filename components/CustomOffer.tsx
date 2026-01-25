@@ -52,7 +52,7 @@ const CustomOffer: React.FC = () => {
                                 Wir erstellen dir ein maßgeschneidertes Angebot für dein ganz persönliches Pflege-Projekt.
                             </p>
                             <a
-                                href="mailto:ideen@innovation-pflegen.de"
+                                href="mailto:lars@innovation-pflegen.de"
                                 className="w-full sm:w-auto bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-slate-800 shadow-xl transition-all hover:scale-105"
                             >
                                 Projekt anfragen
