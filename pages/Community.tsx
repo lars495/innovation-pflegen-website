@@ -12,7 +12,7 @@ const Community: React.FC = () => {
             ← Zurück
           </Link>
           <h1 className="text-6xl md:text-8xl font-black mb-4 tracking-tighter transform -rotate-2">
-            MAKE CARE <br/> FUN AGAIN!
+            MAKE CARE <br /> FUN AGAIN!
           </h1>
           <p className="text-2xl text-white/90 font-medium max-w-2xl mx-auto mt-6">
             Innovation muss nicht nach Desinfektionsmittel riechen. Wir bringen Farbe, Pizza und Energie in die Pflege.
@@ -41,7 +41,7 @@ const Community: React.FC = () => {
           <div className="flex flex-col justify-center">
             <h2 className="text-3xl font-bold text-slate-900 mb-6">Warum Community wichtig ist</h2>
             <p className="text-lg text-slate-600 mb-6">
-              Pflege kann einsam machen, wenn man immer nur kämpft. In unserer Community triffst du Menschen, die nicht jammern, sondern machen. 
+              Pflege kann einsam machen, wenn man immer nur kämpft. In unserer Community triffst du Menschen, die nicht jammern, sondern machen.
             </p>
             <div className="bg-orange-50 p-6 rounded-2xl border border-orange-100">
               <p className="font-bold text-orange-800 italic">
@@ -57,9 +57,7 @@ const Community: React.FC = () => {
           <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-8">
             Egal ob du eine Idee hast, programmieren kannst oder einfach nur wissen willst, wie die Pflege von morgen aussieht.
           </p>
-          <button className="bg-gradient-to-r from-orange-500 to-pink-600 text-white px-10 py-5 rounded-2xl font-bold text-xl hover:scale-105 transition-transform shadow-xl shadow-pink-500/20">
-            Discord Community beitreten
-          </button>
+          <div className="text-4xl">🍌</div>
         </div>
       </div>
     </div>
