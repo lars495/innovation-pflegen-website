@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-8">
-              Wir begleiten Pflegeeinrichtungen auf ihrem Weg in eine digitale und menschliche Zukunft. Projektmanagement mit Expertise und Herz.
+              Veränderung und Innovation in der Pflege können nur durch Pflegende selbst erfolgen. Wir unterstützen Sie dabei, mit Mut, Fantasie und Spaß die Zukunft der Pflege anzugehen.
             </p>
             <div className="flex gap-4">
               <div className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:border-[#2589D8] transition-colors cursor-pointer">
@@ -35,10 +35,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-black mb-8 tracking-tight text-[#38B481]">Service</h4>
             <ul className="space-y-4 text-slate-400 text-sm font-medium">
-              <li><a href="#services" className="hover:text-white transition">Digitalisierungs-Check</a></li>
-              <li><a href="#services" className="hover:text-white transition">Prozess-Audit</a></li>
-              <li><a href="#services" className="hover:text-white transition">Fördermittel-Beratung</a></li>
-              <li><a href="#about" className="hover:text-white transition">Team Training</a></li>
+              <li><Link to="/participation" className="hover:text-white transition">Hackathons</Link></li>
+              <li><Link to="/career" className="hover:text-white transition">Coaching</Link></li>
+              <li><Link to="/e-learning" className="hover:text-white transition">E-Learning</Link></li>
+              <li><Link to="/learning-ai" className="hover:text-white transition">KI in der Pflege</Link></li>
             </ul>
           </div>
 
@@ -47,7 +47,6 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-slate-400 text-sm font-medium">
               <li><Link to="/about-us" className="hover:text-white transition">Über uns</Link></li>
               <li><Link to="/karriere" className="hover:text-white transition">Karriere</Link></li>
-              <li><Link to="/referenzen" className="hover:text-white transition">Referenzen</Link></li>
               <li><Link to="/blog" className="hover:text-white transition">Blog</Link></li>
             </ul>
           </div>
@@ -71,8 +70,10 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-slate-900 pt-12 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-xs font-bold uppercase tracking-[0.2em]">
-          <p>© 2024 innovation-pflegen.de</p>
-          <div className="flex gap-8">
+          <p>© 2025 innovation-pflegen.de</p>
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+            <a href="mailto:lars@innovation-pflegen.de" className="hover:text-white transition">lars@innovation-pflegen.de</a>
+            <a href="tel:+4915733360952" className="hover:text-white transition">+49 157 333 609 52</a>
             <Link to="/impressum" className="hover:text-white transition">Impressum</Link>
             <Link to="/datenschutz" className="hover:text-white transition">Datenschutz</Link>
           </div>

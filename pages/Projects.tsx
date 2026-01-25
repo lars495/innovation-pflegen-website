@@ -31,7 +31,7 @@ const ProjectsPage: React.FC = () => {
                 Großprojekte in der Pflege – sei es die Einführung neuer Pflegemodelle, umfassende Digitalisierungsvorhaben oder die Umstrukturierung ganzer Abteilungen – binden enorme interne Ressourcen. Oft werden Stationsleitungen oder PDLs "nebenbei" mit Projektleitungen betraut, was schnell zur Überlastung führt.
               </p>
               <p>
-                Unser Ansatz: <strong>Wir entlasten Ihre Führungskräfte.</strong> Lars Ahrend und Matthias Windeisen bringen jahrelange Erfahrung in der Steuerung komplexer Förderprojekte (z.B. ESF) und interdisziplinärer Teams mit.
+                Unser Ansatz: <strong>Wir entlasten Ihre Führungskräfte.</strong> Lars Arendt und Matthias Windeisen bringen jahrelange Erfahrung in der Steuerung komplexer Förderprojekte (z.B. ESF) und interdisziplinärer Teams mit.
               </p>
               <ul className="space-y-4 mt-8">
                 <li className="flex items-start gap-3">
@@ -50,19 +50,29 @@ const ProjectsPage: React.FC = () => {
             </div>
           </div>
           <div className="bg-slate-50 rounded-[2.5rem] p-8 border border-slate-100 shadow-xl">
-             <div className="bg-white rounded-2xl p-6 shadow-sm mb-6">
-                <h3 className="font-bold text-slate-900 mb-2">Beispiel: ESF-Projekte</h3>
-                <p className="text-slate-500 text-sm">Erfahrung in der Antragstellung, Durchführung und Evaluation europäischer Sozialfonds-Projekte zur Mitarbeiterqualifizierung.</p>
-             </div>
-             <div className="bg-white rounded-2xl p-6 shadow-sm mb-6">
-                <h3 className="font-bold text-slate-900 mb-2">Beispiel: Reorganisation</h3>
-                <p className="text-slate-500 text-sm">Begleitung der Umstrukturierung einer psychiatrischen Abteilung mit 40 Betten unter Einbezug aller Berufsgruppen.</p>
-             </div>
-             <div className="bg-[#2589D8] rounded-2xl p-8 text-white text-center">
-               <h3 className="font-bold text-xl mb-2">Brauchen Sie Unterstützung?</h3>
-               <p className="opacity-90 mb-4">Lassen Sie uns über Ihr Vorhaben sprechen.</p>
-               <button className="bg-white text-[#2589D8] px-6 py-2 rounded-lg font-bold hover:bg-blue-50 transition">Kontakt aufnehmen</button>
-             </div>
+            <div className="bg-white rounded-2xl p-6 shadow-sm mb-6">
+              <h3 className="font-bold text-slate-900 mb-2">Pflegetag 2025: Posterwettbewerb</h3>
+              <p className="text-slate-500 text-sm mb-3">Wir sind mit zwei innovativen Postern dabei:</p>
+              <ul className="text-sm text-slate-600 space-y-2">
+                <li className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#2589D8]"></div>
+                  3D-Druck in der Pflege
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#2589D8]"></div>
+                  APN Psych-Med
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-sm mb-6">
+              <h3 className="font-bold text-slate-900 mb-2">Pflegetag 2024</h3>
+              <p className="text-slate-500 text-sm">Lust auf Hackathon? Unser Poster aus 2024 zum Thema innovative Arbeitsmethoden.</p>
+            </div>
+            <div className="bg-[#2589D8] rounded-2xl p-8 text-white text-center">
+              <h3 className="font-bold text-xl mb-2">Brauchen Sie Unterstützung?</h3>
+              <p className="opacity-90 mb-4">Lassen Sie uns über Ihr Vorhaben sprechen.</p>
+              <button className="bg-white text-[#2589D8] px-6 py-2 rounded-lg font-bold hover:bg-blue-50 transition">Kontakt aufnehmen</button>
+            </div>
           </div>
         </div>
       </div>

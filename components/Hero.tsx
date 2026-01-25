@@ -10,20 +10,20 @@ const Hero: React.FC = () => {
       <div className="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[600px] h-[600px] bg-[#2589D8]/10 rounded-full blur-3xl -z-10"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-100 text-slate-600 text-sm font-semibold mb-8 animate-bounce">
-          <span className="text-xl">🚀</span>
-          Innovation darf Spaß machen!
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-50 border border-slate-100 text-slate-600 text-sm font-semibold mb-8">
+          <span className="text-xl">👋</span>
+          Hallo :-) lasst uns gemeinsam was in der Pflege bewegen!
         </div>
 
         <h1 className="text-5xl sm:text-7xl font-black text-slate-900 tracking-tighter mb-8 leading-[1.1]">
-          Empowerment für die <br />
+          Innovation in der <br />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-[#2589D8] to-[#38B481]">
-            Pflege von morgen
+            Pflege selbst gestalten
           </span>
         </h1>
 
         <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-12 leading-relaxed font-medium">
-          Wir glauben nicht an Lösungen vom Schreibtisch. Wir geben euch die Tools, das Wissen und die KI, um euren Arbeitsalltag selbst zu gestalten. Partizipativ, kompetent und direkt von der Basis.
+          Veränderung und Innovation in der Pflege können nur durch Pflegende selbst erfolgen. Wir unterstützen Sie dabei, mit Mut, Fantasie und Spaß die Zukunft der Pflege anzugehen.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-6">

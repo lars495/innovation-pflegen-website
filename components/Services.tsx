@@ -58,52 +58,76 @@ const FlipCard: React.FC<FlipCardProps> = ({ title, frontDescription, backDescri
 const Services: React.FC = () => {
   const services = [
     {
-      title: "KI-Kompetenz & Lernen",
-      frontDescription: "Schluss mit langweiligen Fortbildungen. Wir nutzen KI für smartes Lernen direkt im Alltag.",
-      backDescription: "Keine Angst vor der Zukunft! Wir zeigen dir, wie du KI-Tools wie ChatGPT als deinen persönlichen Tutor nutzt. Stell Fragen, lass dir Fachbegriffe erklären oder simuliere schwierige Gespräche – alles in deinem Tempo.",
+      title: "Hackathons",
+      frontDescription: "Der Einstieg in das selbstbestimmte Arbeiten und Lernen.",
+      backDescription: "An einem Tag lösen motivierte Pflegende Probleme, an denen Stabsstellen Monate und Jahre sitzen. Hackathons bieten den perfekten Rahmen für kreative Lösungen.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
       colorClass: "bg-gradient-to-br from-indigo-500 to-purple-600",
-      path: "/learning-ai"
+      path: "/participation"
     },
     {
-      title: "Software selbst bauen",
-      frontDescription: "Du brauchst kein Informatikstudium. Bau dir deine digitalen Helfer für die Station einfach selbst.",
-      backDescription: "Stell dir vor, du könntest das nervige Excel-Sheet einfach in eine App verwandeln. Mit KI-Unterstützung (No-Code) können Pflegekräfte plötzlich Software bauen. Wir befähigen dich, deine eigenen Probleme digital zu lösen.",
+      title: "Coaching in der Pflege",
+      frontDescription: "Erfahrung sichern und junge Pflegende beim Start unterstützen.",
+      backDescription: "Wir qualifizieren erfahrene Fachkräfte zu Coaches, die junge Pflegende begleiten. So bleibt wertvolles Wissen erhalten und es entstehen neue berufliche Perspektiven.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
         </svg>
       ),
       colorClass: "bg-gradient-to-br from-[#2589D8] to-cyan-500",
-      path: "/software-ai"
+      path: "/career"
     },
     {
-      title: "Beteiligung & Change",
-      frontDescription: "Schluss mit 'Befehl von oben'. Wir gestalten Veränderung von der Basis aus.",
-      backDescription: "Du weißt am besten, was am Bett funktioniert. Wir nutzen Methoden, bei denen das Team entscheidet, wie Prozesse laufen sollen. Echte Partizipation bedeutet, dass deine Stimme zählt und Veränderungen Sinn machen.",
+      title: "Selbstbestimmtes E-Learning",
+      frontDescription: "Lerninhalte dort erstellen, wo sie gebraucht werden: vor Ort.",
+      backDescription: "Pflegende kreieren ihr eigenes E-Learning. Mit KI und Smartphones ist das einfacher als man denkt – praxisnah und direkt auf den Wohnbereich zugeschnitten.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+      ),
+      colorClass: "bg-gradient-to-br from-[#38B481] to-emerald-600",
+      path: "/e-learning"
+    },
+    {
+      title: "KI in der Pflege",
+      frontDescription: "Die technische Revolution aktiv mitgestalten.",
+      backDescription: "Damit Pflegekräfte nicht nur Ausgelieferte der Technik sind, müssen sie KI jetzt kennenlernen, Scheu ablegen und selbst sinnvolle Anwendungen für den Alltag erdenken.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      ),
+      colorClass: "bg-gradient-to-br from-orange-400 to-pink-500",
+      path: "/learning-ai"
+    },
+    {
+      title: "PeBeM",
+      frontDescription: "Personalbemessung als Chance für die Zukunft.",
+      backDescription: "Wir unterstützen Betriebsräte und MAVen dabei, PeBeM aktiv zu gestalten und Kolleg*innen vor gefährlichen strategischen Fehlentscheidungen zu schützen.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        </svg>
+      ),
+      colorClass: "bg-gradient-to-br from-blue-500 to-indigo-600",
+      path: "/participation"
+    },
+    {
+      title: "Personalentwicklung im Team",
+      frontDescription: "Machtverhältnisse umkehren und echte Bedürfnisse fokussieren.",
+      backDescription: "Teams erarbeiten eigene Konzepte zur Fortbildung. Es werden Talente vor Ort genutzt, um sich gegenseitig zu stärken, statt an den Bedürfnissen vorbeizuplanen.",
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>
       ),
-      colorClass: "bg-gradient-to-br from-[#38B481] to-emerald-600",
-      path: "/participation"
-    },
-    {
-      title: "Community & Spaß",
-      frontDescription: "Gemeinsam tüfteln, Pizza essen und Probleme lösen. Innovation darf Spaß machen!",
-      backDescription: "Komm zu unseren Hackathons! Wir bringen Pflegekräfte, Coder und Designer zusammen. In 48 Stunden entwickeln wir Prototypen für echte Probleme. Hier erlebst du Selbstwirksamkeit pur und triffst Leute, die wirklich was bewegen wollen.",
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-      colorClass: "bg-gradient-to-br from-orange-400 to-pink-500",
-      path: "/community"
+      colorClass: "bg-gradient-to-br from-teal-400 to-[#38B481]",
+      path: "/competence"
     }
   ];
 

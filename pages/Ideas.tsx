@@ -21,41 +21,59 @@ const IdeasPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Idee 1 */}
-          <div className="bg-slate-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-slate-100 group">
-            <div className="h-48 bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
-              <span className="text-6xl">🤖</span>
-            </div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-3">KI als Assistent, nicht Ersatz</h3>
-            <p className="text-slate-600 mb-4">
-              Wie können Large Language Models (LLMs) die Dokumentation so vereinfachen, dass wieder mehr Zeit für das Gespräch am Bett bleibt? Unsere Vision ist die "Zero-Click-Dokumentation".
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Hackathons */}
+          <div className="bg-slate-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 border border-slate-100 group">
+            <div className="h-16 w-16 bg-indigo-100 rounded-2xl mb-6 flex items-center justify-center text-3xl">🚀</div>
+            <h3 className="text-2xl font-bold text-slate-900 mb-3">Hackathons</h3>
+            <p className="text-slate-600 mb-4 leading-relaxed">
+              Hackathons bieten den Einstieg in das selbstbestimmte Arbeiten und Lernen. An einem Tag lösen motivierte Pflegende Probleme, an denen Stabsstellen Monate und Jahre sitzen.
             </p>
-            <span className="text-[#2589D8] font-bold text-sm uppercase tracking-wider">Technologie</span>
           </div>
 
-          {/* Idee 2 */}
-          <div className="bg-slate-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-slate-100 group">
-            <div className="h-48 bg-gradient-to-br from-green-100 to-green-50 rounded-2xl mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
-              <span className="text-6xl">🌱</span>
-            </div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-3">New Work in der Pflege</h3>
-            <p className="text-slate-600 mb-4">
-              Selbstorganisierte Teams (Buurtzorg-Modell) adaptiert für den deutschen Markt. Weg von starren Hierarchien, hin zu Verantwortung und Flexibilität im Dienstplan.
+          {/* Coaching */}
+          <div className="bg-slate-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 border border-slate-100 group">
+            <div className="h-16 w-16 bg-blue-100 rounded-2xl mb-6 flex items-center justify-center text-3xl">🤝</div>
+            <h3 className="text-2xl font-bold text-slate-900 mb-3">Coaching in der Pflege</h3>
+            <p className="text-slate-600 mb-4 leading-relaxed">
+              Ein Drittel der Pflegende geht bald in Rente. Wir qualifizieren erfahrene Fachkräfte zu Coaches, die junge Pflegende beim Start unterstützen und sich selbst Perspektiven über die Rente hinaus erschließen.
             </p>
-            <span className="text-[#38B481] font-bold text-sm uppercase tracking-wider">Organisation</span>
           </div>
 
-          {/* Idee 3 */}
-          <div className="bg-slate-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-slate-100 group">
-            <div className="h-48 bg-gradient-to-br from-purple-100 to-purple-50 rounded-2xl mb-6 flex items-center justify-center group-hover:scale-105 transition-transform">
-              <span className="text-6xl">🎓</span>
-            </div>
-            <h3 className="text-2xl font-bold text-slate-900 mb-3">Micro-Learning on the Job</h3>
-            <p className="text-slate-600 mb-4">
-              Lernnuggets, die genau dann verfügbar sind, wenn man sie braucht (Just-in-Time Learning). Integriert in den Arbeitsablauf, statt im Seminarraum.
+          {/* E-Learning */}
+          <div className="bg-slate-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 border border-slate-100 group">
+            <div className="h-16 w-16 bg-emerald-100 rounded-2xl mb-6 flex items-center justify-center text-3xl">📱</div>
+            <h3 className="text-2xl font-bold text-slate-900 mb-3">Selbstbestimmtes E-Learning</h3>
+            <p className="text-slate-600 mb-4 leading-relaxed">
+              Wieso lassen wir nicht die Pflegenden vor Ort ihr eigenes E-Learning kreieren? In Zeiten von KI und Smartphones ist das viel einfacher als es sich anhört und viel praxisnäher.
             </p>
-            <span className="text-purple-600 font-bold text-sm uppercase tracking-wider">Bildung</span>
+          </div>
+
+          {/* Praxisanleiter */}
+          <div className="bg-slate-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 border border-slate-100 group">
+            <div className="h-16 w-16 bg-teal-100 rounded-2xl mb-6 flex items-center justify-center text-3xl">🎓</div>
+            <h3 className="text-2xl font-bold text-slate-900 mb-3">Praxisanleiter*innen</h3>
+            <p className="text-slate-600 mb-4 leading-relaxed">
+              Praxisanleiter*innen sind die tatsächlichen Personalentwickler*innen. Mit gezielter Unterstützung können sie entscheidende Veränderungen anstoßen und begleiten.
+            </p>
+          </div>
+
+          {/* KI in der Pflege */}
+          <div className="bg-slate-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 border border-slate-100 group">
+            <div className="h-16 w-16 bg-orange-100 rounded-2xl mb-6 flex items-center justify-center text-3xl">🤖</div>
+            <h3 className="text-2xl font-bold text-slate-900 mb-3">KI in der Pflege</h3>
+            <p className="text-slate-600 mb-4 leading-relaxed">
+              Damit uns bei der KI nicht dasselbe passiert wie beim Internet, müssen Pflegende jetzt mit KI in Kontakt kommen, Scheu ablegen und selbst sinnvolle Anwendungen erdenken.
+            </p>
+          </div>
+
+          {/* Akademisierte Pflegende */}
+          <div className="bg-slate-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 border border-slate-100 group">
+            <div className="h-16 w-16 bg-purple-100 rounded-2xl mb-6 flex items-center justify-center text-3xl">🏛️</div>
+            <h3 className="text-2xl font-bold text-slate-900 mb-3">Akademisierte Pflegende</h3>
+            <p className="text-slate-600 mb-4 leading-relaxed">
+              Gerade in der Langzeitpflege ist das Potenzial enorm. Ich möchte Arbeitgebern und Pflegenden helfen, zueinander zu finden und gemeinsam Potenziale vor Ort zu erkunden.
+            </p>
           </div>
         </div>
 

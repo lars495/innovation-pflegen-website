@@ -6,7 +6,6 @@ import Services from './components/Services';
 import About from './components/About';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
-import Testimonials from './components/Testimonials';
 import ScrollToTopOnNavigate from './components/ScrollToTopOnNavigate';
 import CustomOffer from './components/CustomOffer';
 
@@ -35,10 +34,6 @@ const Home: React.FC = () => {
 
       <section id="custom-offer">
         <CustomOffer />
-      </section>
-
-      <section id="testimonials">
-        <Testimonials />
       </section>
 
       <section id="about" className="py-20 bg-white">

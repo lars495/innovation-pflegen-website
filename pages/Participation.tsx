@@ -13,7 +13,7 @@ const Participation: React.FC = () => {
           </Link>
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-6xl font-black mb-6 leading-tight">
-              Echte Beteiligung. <br/>
+              Echte Beteiligung. <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-300">Von unten nach oben.</span>
             </h1>
             <p className="text-xl text-emerald-100 leading-relaxed">
@@ -24,13 +24,27 @@ const Participation: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="bg-slate-50 rounded-[2.5rem] p-8 md:p-12 border border-slate-100 shadow-xl mb-20">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-black text-slate-900 mb-6">PeBeM in der Mitarbeitervertretung</h2>
+            <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
+              <p>
+                Die neue Personalbemessung für die Langzeitpflege ist hier und nur wenige Unternehmen haben sich auf den Weg in eine gute Richtung begeben. Mitarbeitervertretungen müssen vielerorts zusehen, wie teure Berater zur Funktionspflege aufrufen und PeBeM zu einem Rechenbeispiel verkommen lassen.
+              </p>
+              <p>
+                Betriebsräte und Mitarbeitervertretungen sind jetzt gefragt, um ihre Kolleg*innen vor gefährlichen strategischen Entscheidungen zu schützen und sich aktiv in die Gestaltung der Zukunft des Betriebs einzumischen. Kluge Geschäftsleitungen werden erkennen, dass sie nur gemeinsam mit einem starken BR/MAV und einer starken Belegschaft den künftigen Herausforderungen gerecht werden können.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-16">
           <div>
             <h2 className="text-3xl font-bold text-slate-900 mb-6">Expertise der Basis nutzen.</h2>
             <p className="text-lg text-slate-600 mb-6">
               Niemand kennt die Abläufe besser als die Menschen, die jeden Tag am Patienten arbeiten. Partizipation heißt für uns nicht "ihr dürft mal eure Meinung sagen", sondern "ihr entscheidet mit".
             </p>
-            
+
             <h3 className="text-xl font-bold text-emerald-700 mt-8 mb-4">Unsere Methoden:</h3>
             <ul className="space-y-4">
               <li className="flex gap-4 p-4 border border-slate-100 rounded-xl hover:shadow-md transition">
@@ -67,7 +81,7 @@ const Participation: React.FC = () => {
               <p className="text-lg font-medium">"Wie würden wir es machen, wenn wir heute neu anfangen?"</p>
             </div>
             <p className="mt-8 text-slate-500 text-sm text-center relative z-10">
-              Wir moderieren diesen Kulturwandel. <br/>Wertschätzend, aber radikal ehrlich.
+              Wir moderieren diesen Kulturwandel. <br />Wertschätzend, aber radikal ehrlich.
             </p>
           </div>
         </div>
