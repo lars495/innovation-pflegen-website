@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
             <Link to="/about-us" className="text-slate-600 font-medium hover:text-[#2589D8] transition">Über uns</Link>
             <Link to="/blog" className="text-slate-600 font-medium hover:text-[#2589D8] transition">Blog</Link>
             <a
-              href="mailto:ideen@innovation-pflegen.de"
+              href="mailto:lars@innovation-pflegen.de"
               className="bg-gradient-to-r from-[#2589D8] to-[#38B481] text-white px-6 py-2.5 rounded-xl font-bold hover:shadow-lg hover:scale-105 transition-all text-sm"
             >
               Projekt anfragen
@@ -88,7 +88,7 @@ const Navbar: React.FC = () => {
           <Link to="/participation" onClick={() => setIsOpen(false)} className="block w-full text-left py-2 text-lg font-medium text-slate-600">Beteiligung</Link>
           <Link to="/community" onClick={() => setIsOpen(false)} className="block w-full text-left py-2 text-lg font-medium text-slate-600">Community</Link>
           <Link to="/about-us" onClick={() => setIsOpen(false)} className="block w-full text-left py-2 text-lg font-medium text-slate-600">Über uns</Link>
-          <a hred="mailto:ideen@innovation-pflegen.de" className="block w-full text-center bg-gradient-to-r from-[#2589D8] to-[#38B481] text-white px-5 py-3 rounded-xl font-bold">Projekt anfragen</a>
+          <a href="mailto:lars@innovation-pflegen.de" className="block w-full text-center bg-gradient-to-r from-[#2589D8] to-[#38B481] text-white px-5 py-3 rounded-xl font-bold">Projekt anfragen</a>
         </div>
       )}
     </nav>
