@@ -20,6 +20,7 @@ import Datenschutz from './pages/Datenschutz';
 import Career from './pages/Career';
 import References from './pages/References';
 import BlogPage from './pages/Blog';
+import ThreeDPrint from './pages/ThreeDPrint';
 
 const Home: React.FC = () => {
   return (
@@ -44,25 +45,36 @@ const Home: React.FC = () => {
 };
 
 const App: React.FC = () => {
+  const hostname = window.location.hostname;
+  const is3DSubdomain = hostname.startsWith('3d-druck.') || hostname.startsWith('3d.');
+
   return (
     <Router>
       <ScrollToTopOnNavigate />
       <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
         <Navbar />
         <main className="flex-grow pt-20">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/learning-ai" element={<LearningAI />} />
-            <Route path="/software-ai" element={<SoftwareAI />} />
-            <Route path="/participation" element={<Participation />} />
-            <Route path="/community" element={<Community />} />
-            <Route path="/about-us" element={<AboutUs />} />
-            <Route path="/impressum" element={<Impressum />} />
-            <Route path="/datenschutz" element={<Datenschutz />} />
-            <Route path="/karriere" element={<Career />} />
-            <Route path="/referenzen" element={<References />} />
-            <Route path="/blog" element={<BlogPage />} />
-          </Routes>
+          {is3DSubdomain ? (
+            <Routes>
+              <Route path="*" element={<ThreeDPrint />} />
+            </Routes>
+          ) : (
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/learning-ai" element={<LearningAI />} />
+              <Route path="/software-ai" element={<SoftwareAI />} />
+              <Route path="/participation" element={<Participation />} />
+              <Route path="/community" element={<Community />} />
+              <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/impressum" element={<Impressum />} />
+              <Route path="/datenschutz" element={<Datenschutz />} />
+              <Route path="/karriere" element={<Career />} />
+              <Route path="/referenzen" element={<References />} />
+              <Route path="/blog" element={<BlogPage />} />
+              <Route path="/3d-druck" element={<ThreeDPrint />} />
+              <Route path="/contact-8" element={<ThreeDPrint />} />
+            </Routes>
+          )}
         </main>
         <Footer />
         <ScrollToTop />
