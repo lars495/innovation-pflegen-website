@@ -63,7 +63,7 @@ const Career: React.FC = () => {
                             <ul className="space-y-4 mb-8">
                                 <li className="flex items-center gap-3">
                                     <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-sm font-bold leading-none">✓</div>
-                                    <span className="text-slate-700 font-medium">Pflege-Enthusiasten mit IT-Affinität</span>
+                                    <span className="text-slate-700 font-medium">Pflege-Enthusiasten mit der richtigen Haltung</span>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-sm font-bold leading-none">✓</div>
@@ -75,12 +75,12 @@ const Career: React.FC = () => {
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <div className="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center text-green-600 text-sm font-bold leading-none">✓</div>
-                                    <span className="text-slate-700 font-medium">Jeder, der die Pflege besser machen will</span>
+                                    <span className="text-slate-700 font-medium">Jeder, der die Pflege positiv beeinflussen und verändern will</span>
                                 </li>
                             </ul>
                             <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 text-center">
                                 <p className="text-slate-500 text-sm mb-4">Interessiert? Schreib uns einfach ganz unkompliziert.</p>
-                                <a href="mailto:karriere@innovation-pflegen.de" className="inline-block bg-slate-900 text-white px-8 py-3 rounded-xl font-bold hover:scale-105 transition-transform">
+                                <a href="mailto:lars@innovation-pflegen.de" className="inline-block bg-slate-900 text-white px-8 py-3 rounded-xl font-bold hover:scale-105 transition-transform">
                                     Initialbewerbung senden
                                 </a>
                             </div>
