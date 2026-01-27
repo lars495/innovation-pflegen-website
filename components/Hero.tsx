@@ -32,21 +32,26 @@ const Hero: React.FC = () => {
           </button>
         </div>
 
-        <div className="mt-24 pt-12 border-t border-slate-100 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-24 pt-12 border-t border-slate-100 grid grid-cols-2 md:grid-cols-4 gap-8">
           <Link to="/participation" className="flex flex-col items-center p-4 rounded-2xl hover:bg-slate-50 transition cursor-pointer">
             <span className="text-4xl mb-2">🤝</span>
             <span className="text-lg font-bold text-slate-900">Beteiligung</span>
-            <span className="text-sm text-slate-500">Von der Basis aus</span>
+            <span className="text-sm text-slate-500 text-center">Von der Basis aus</span>
           </Link>
           <Link to="/learning-ai" className="flex flex-col items-center p-4 rounded-2xl hover:bg-slate-50 transition cursor-pointer">
             <span className="text-4xl mb-2">🤖</span>
             <span className="text-lg font-bold text-slate-900">KI-Power</span>
-            <span className="text-sm text-slate-500">Lernen & Coden</span>
+            <span className="text-sm text-slate-500 text-center">Lernen & Coden</span>
+          </Link>
+          <Link to="/3d-druck" className="flex flex-col items-center p-4 rounded-2xl hover:bg-slate-50 transition cursor-pointer">
+            <span className="text-4xl mb-2">🖨️</span>
+            <span className="text-lg font-bold text-slate-900">3D-Druck</span>
+            <span className="text-sm text-slate-500 text-center">Eigene Hilfsmittel</span>
           </Link>
           <Link to="/community" className="flex flex-col items-center p-4 rounded-2xl hover:bg-slate-50 transition cursor-pointer">
             <span className="text-4xl mb-2">🎉</span>
             <span className="text-lg font-bold text-slate-900">Spaß</span>
-            <span className="text-sm text-slate-500">Community & Events</span>
+            <span className="text-sm text-slate-500 text-center">Community & Events</span>
           </Link>
         </div>
       </div>
