@@ -69,7 +69,7 @@ const ThreeDPrint: React.FC = () => {
 
 
             {/* Poster Section */}
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 mb-16 relative z-20">
+            <div className="max-w-[724px] mx-auto px-4 sm:px-6 lg:px-8 -mt-16 mb-16 relative z-20">
                 <div className="bg-white p-4 rounded-[2.5rem] shadow-2xl border border-slate-100 overflow-hidden">
                     <img
                         src="/assets/3d-druck-poster.jpg"
