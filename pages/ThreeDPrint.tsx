@@ -67,6 +67,17 @@ const ThreeDPrint: React.FC = () => {
                 </div>
             </div>
 
+            {/* Poster Section */}
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-20">
+                <div className="bg-white p-2 sm:p-4 rounded-[2rem] shadow-2xl border border-slate-100">
+                    <img
+                        src="/assets/3d-druck-poster.png"
+                        alt="3D Druck in der Pflege Poster"
+                        className="w-full h-auto rounded-xl shadow-inner border border-slate-50"
+                    />
+                </div>
+            </div>
+
             {/* Ablauf Section */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
                 <h2 className="text-4xl font-black text-slate-900 mb-16 text-center tracking-tight">Der Ablauf</h2>
