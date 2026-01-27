@@ -46,7 +46,7 @@ const Home: React.FC = () => {
 
 const App: React.FC = () => {
   const hostname = window.location.hostname;
-  const is3DSubdomain = hostname.startsWith('3d-druck.') || hostname.startsWith('3d.');
+  const is3DSubdomain = hostname.startsWith('contact-8.') || hostname.startsWith('3d.');
 
   return (
     <Router>
@@ -71,7 +71,6 @@ const App: React.FC = () => {
               <Route path="/karriere" element={<Career />} />
               <Route path="/referenzen" element={<References />} />
               <Route path="/blog" element={<BlogPage />} />
-              <Route path="/3d-druck" element={<ThreeDPrint />} />
               <Route path="/contact-8" element={<ThreeDPrint />} />
             </Routes>
           )}

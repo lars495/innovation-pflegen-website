@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
             <span className="text-lg font-bold text-slate-900">KI-Power</span>
             <span className="text-sm text-slate-500 text-center">Lernen & Coden</span>
           </Link>
-          <Link to="/3d-druck" className="flex flex-col items-center p-4 rounded-2xl hover:bg-slate-50 transition cursor-pointer">
+          <Link to="/contact-8" className="flex flex-col items-center p-4 rounded-2xl hover:bg-slate-50 transition cursor-pointer">
             <span className="text-4xl mb-2">🖨️</span>
             <span className="text-lg font-bold text-slate-900">3D-Druck</span>
             <span className="text-sm text-slate-500 text-center">Eigene Hilfsmittel</span>
