@@ -82,7 +82,7 @@ const LearningAI: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid md:grid-cols-3 gap-8">
           {offerings.map((offering, index) => (
-            <div key={index} className="group relative bg-white rounded-[2.5rem] border border-slate-100 p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+            <div key={index} className="group relative bg-white rounded-[2.5rem] border border-slate-100 p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 flex flex-col">
               {/* Icon */}
               <div className={`w-20 h-20 bg-gradient-to-br ${offering.colorClass} rounded-2xl flex items-center justify-center text-white mb-6 shadow-lg transform group-hover:scale-110 transition-transform duration-500`}>
                 {offering.icon}
@@ -97,7 +97,7 @@ const LearningAI: React.FC = () => {
               </p>
 
               {/* Features */}
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3 mb-8 flex-grow">
                 {offering.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-2 text-sm text-slate-600">
                     <svg className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -111,7 +111,7 @@ const LearningAI: React.FC = () => {
               {/* CTA */}
               <Link
                 to={offering.ctaLink}
-                className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r ${offering.colorClass} text-white rounded-xl font-bold transition-all hover:scale-105 hover:shadow-lg`}
+                className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r ${offering.colorClass} text-white rounded-xl font-bold transition-all hover:scale-105 hover:shadow-lg mt-auto`}
               >
                 <span>{offering.cta}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transition-transform group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
