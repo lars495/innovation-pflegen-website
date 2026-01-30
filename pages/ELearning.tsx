@@ -94,12 +94,12 @@ const ELearningPage: React.FC = () => {
             </a>
           </div>
           <div className="md:w-1/2 flex justify-center">
-            <div className="w-full h-64 bg-white rounded-3xl shadow-lg flex items-center justify-center p-8">
-              {/* Fallback Icon / Logo Placeholder if no image available */}
-              <div className="text-center">
-                <div className="text-5xl font-black text-slate-200 mb-2">eDoer</div>
-                <div className="text-sm text-slate-400 uppercase tracking-widest font-bold">AI Learning Platform</div>
-              </div>
+            <div className="w-full h-64 bg-white rounded-3xl shadow-lg flex items-center justify-center p-12">
+              <img
+                src="/assets/edoer-logo.png"
+                alt="eDoer AI Learning Platform Logo"
+                className="max-w-full max-h-full object-contain filter drop-shadow-sm"
+              />
             </div>
           </div>
         </div>
