@@ -21,6 +21,8 @@ import Career from './pages/Career';
 import References from './pages/References';
 import BlogPage from './pages/Blog';
 import ThreeDPrint from './pages/ThreeDPrint';
+import ELearningPage from './pages/ELearning';
+import KIKompetenzen from './pages/KIKompetenzen';
 
 const Home: React.FC = () => {
   return (
@@ -47,9 +49,6 @@ const Home: React.FC = () => {
 const App: React.FC = () => {
   const hostname = window.location.hostname;
   const is3DSubdomain = hostname.startsWith('contact-8.') || hostname.startsWith('3d.');
-  const isHackathonsSubdomain = hostname.startsWith('hackathons.');
-  const isEdoerSubdomain = hostname.startsWith('edoer.');
-  const isKISubdomain = hostname.startsWith('ki-kompetenzen.') || hostname.startsWith('ki.');
 
   return (
     <Router>
@@ -60,18 +59,6 @@ const App: React.FC = () => {
           {is3DSubdomain ? (
             <Routes>
               <Route path="*" element={<ThreeDPrint />} />
-            </Routes>
-          ) : isHackathonsSubdomain ? (
-            <Routes>
-              <Route path="*" element={<Participation />} />
-            </Routes>
-          ) : isEdoerSubdomain ? (
-            <Routes>
-              <Route path="*" element={<LearningAI />} />
-            </Routes>
-          ) : isKISubdomain ? (
-            <Routes>
-              <Route path="*" element={<LearningAI />} />
             </Routes>
           ) : (
             <Routes>
@@ -87,6 +74,8 @@ const App: React.FC = () => {
               <Route path="/referenzen" element={<References />} />
               <Route path="/blog" element={<BlogPage />} />
               <Route path="/contact-8" element={<ThreeDPrint />} />
+              <Route path="/e-learning" element={<ELearningPage />} />
+              <Route path="/ki-kompetenzen" element={<KIKompetenzen />} />
             </Routes>
           )}
         </main>
