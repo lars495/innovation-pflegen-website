@@ -42,12 +42,21 @@ const FlipCard: React.FC<FlipCardProps> = ({ title, frontDescription, backDescri
             {backDescription}
           </p>
 
-          <Link to={path} className="mt-auto w-full group/btn relative inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-slate-900 rounded-xl font-bold transition-all hover:scale-105 hover:shadow-lg">
-            <span>Mehr erfahren</span>
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transition-transform group-hover/btn:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-            </svg>
-          </Link>
+          {path.startsWith('http') ? (
+            <a href={path} target="_blank" rel="noopener noreferrer" className="mt-auto w-full group/btn relative inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-slate-900 rounded-xl font-bold transition-all hover:scale-105 hover:shadow-lg">
+              <span>Mehr erfahren</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transition-transform group-hover/btn:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </a>
+          ) : (
+            <Link to={path} className="mt-auto w-full group/btn relative inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-slate-900 rounded-xl font-bold transition-all hover:scale-105 hover:shadow-lg">
+              <span>Mehr erfahren</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transition-transform group-hover/btn:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </Link>
+          )}
         </div>
 
       </div>
@@ -67,7 +76,7 @@ const Services: React.FC = () => {
         </svg>
       ),
       colorClass: "bg-gradient-to-br from-indigo-500 to-purple-600",
-      path: "/participation"
+      path: "https://ki-und-lernen.innovation-pflegen.de"
     },
     {
       title: "Coaching in der Pflege",
