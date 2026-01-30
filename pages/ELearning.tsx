@@ -16,29 +16,29 @@ const ELearningPage: React.FC = () => {
           <div className="lg:flex gap-16 items-center">
             <div className="lg:w-1/2">
               <div className="inline-block px-3 py-1 bg-[#2589D8] rounded-full text-xs font-bold uppercase tracking-widest mb-4">Open Education</div>
-              <h1 className="text-5xl font-black mb-6 leading-tight">Partizipatives E-Learning & <br/><span className="text-[#38B481]">Hackathons</span></h1>
+              <h1 className="text-5xl font-black mb-6 leading-tight">Partizipatives E-Learning & <br /><span className="text-[#38B481]">Hackathons</span></h1>
               <p className="text-xl text-slate-300 leading-relaxed">
                 Wir demokratisieren Wissen in der Pflege. Weg von teuren, veralteten Lehrbüchern – hin zu lebendigem, geteiltem Wissen.
               </p>
             </div>
             <div className="lg:w-1/2 mt-12 lg:mt-0">
-               <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
-                 <h3 className="text-2xl font-bold mb-4">Das Problem:</h3>
-                 <ul className="space-y-4">
-                   <li className="flex gap-3">
-                     <span className="text-red-400 text-xl font-bold">×</span>
-                     <span className="text-slate-300">Nur zwei große Verlage dominieren den Markt für Pflege-Wissen.</span>
-                   </li>
-                   <li className="flex gap-3">
-                     <span className="text-red-400 text-xl font-bold">×</span>
-                     <span className="text-slate-300">Inhalte sind oft generisch und fernab der Praxisrealität.</span>
-                   </li>
-                   <li className="flex gap-3">
-                     <span className="text-red-400 text-xl font-bold">×</span>
-                     <span className="text-slate-300">Niedriger Akademisierungsgrad bremst Innovation.</span>
-                   </li>
-                 </ul>
-               </div>
+              <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
+                <h3 className="text-2xl font-bold mb-4">Das Problem:</h3>
+                <ul className="space-y-4">
+                  <li className="flex gap-3">
+                    <span className="text-red-400 text-xl font-bold">×</span>
+                    <span className="text-slate-300">Nur zwei große Verlage dominieren den Markt für Pflege-Wissen.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-red-400 text-xl font-bold">×</span>
+                    <span className="text-slate-300">Inhalte sind oft generisch und fernab der Praxisrealität.</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-red-400 text-xl font-bold">×</span>
+                    <span className="text-slate-300">Niedriger Akademisierungsgrad bremst Innovation.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -66,6 +66,39 @@ const ELearningPage: React.FC = () => {
               <div className="bg-green-50 p-6 rounded-xl border border-green-100">
                 <p className="font-bold text-slate-800">Der Vorteil:</p>
                 <p className="text-slate-600">Pflegende werden von Konsumenten zu Produzenten von Wissen. Das stärkt das professionelle Selbstverständnis massiv.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* eDoer Partnership Section */}
+        <div className="mb-24 bg-gradient-to-r from-slate-50 to-blue-50 rounded-[2.5rem] p-12 border border-blue-100 flex flex-col md:flex-row items-center gap-12">
+          <div className="md:w-1/2">
+            <h2 className="text-3xl font-black text-slate-900 mb-6">Technologie, die begeistert.</h2>
+            <p className="text-lg text-slate-600 mb-6 leading-relaxed">
+              Für moderne Lernformate braucht es mehr als nur PDFs. Wir setzen auf <span className="font-bold text-[#2589D8]">eDoer</span> – den Experten für künstliche Intelligenz und adaptives Lernen.
+            </p>
+            <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+              Mit der eDoer-Plattform erstellen wir gemeinsam mit Pflegenden interaktive Kurse, die sich automatisch an das Vorwissen anpassen.
+            </p>
+            <a
+              href="https://www.edoer.org/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-[#2589D8] font-bold text-lg hover:underline underline-offset-4 group"
+            >
+              eDoer entdecken
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transition-transform group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </a>
+          </div>
+          <div className="md:w-1/2 flex justify-center">
+            <div className="w-full h-64 bg-white rounded-3xl shadow-lg flex items-center justify-center p-8">
+              {/* Fallback Icon / Logo Placeholder if no image available */}
+              <div className="text-center">
+                <div className="text-5xl font-black text-slate-200 mb-2">eDoer</div>
+                <div className="text-sm text-slate-400 uppercase tracking-widest font-bold">AI Learning Platform</div>
               </div>
             </div>
           </div>
