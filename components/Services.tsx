@@ -88,7 +88,7 @@ const Services: React.FC = () => {
         </svg>
       ),
       colorClass: "bg-gradient-to-br from-[#2589D8] to-cyan-500",
-      path: "/career"
+      path: "/coaching"
     },
     {
       title: "Selbstbestimmtes E-Learning",
