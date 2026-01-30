@@ -19,7 +19,7 @@ const LearningAI: React.FC = () => {
         "Empowerment durch selbstbestimmtes Arbeiten"
       ],
       cta: "Mehr über Hackathons",
-      ctaLink: "/participation"
+      ctaLink: "https://hackathons.innovation-pflegen.de"
     },
     {
       title: "Partizipatives E-Learning mit eDoer",
@@ -36,7 +36,7 @@ const LearningAI: React.FC = () => {
         "Wissenstransfer direkt vor Ort"
       ],
       cta: "E-Learning entdecken",
-      ctaLink: "/e-learning"
+      ctaLink: "https://edoer.innovation-pflegen.de"
     },
     {
       title: "KI-Kompetenzen in der Pflege",
@@ -53,7 +53,7 @@ const LearningAI: React.FC = () => {
         "Kompetenzaufbau statt Technik-Angst"
       ],
       cta: "KI-Kompetenzen aufbauen",
-      ctaLink: "/contact"
+      ctaLink: "https://ki-kompetenzen.innovation-pflegen.de"
     }
   ];
 
@@ -109,15 +109,15 @@ const LearningAI: React.FC = () => {
               </ul>
 
               {/* CTA */}
-              <Link
-                to={offering.ctaLink}
+              <a
+                href={offering.ctaLink}
                 className={`w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r ${offering.colorClass} text-white rounded-xl font-bold transition-all hover:scale-105 hover:shadow-lg`}
               >
                 <span>{offering.cta}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transition-transform group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
-              </Link>
+              </a>
             </div>
           ))}
         </div>
