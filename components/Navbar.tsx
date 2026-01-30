@@ -50,15 +50,63 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="hidden lg:flex space-x-6 items-center">
-            <Link to="/learning-ai" className="text-slate-600 font-medium hover:text-[#2589D8] transition">Lernen & KI</Link>
-            <Link to="/software-ai" className="text-slate-600 font-medium hover:text-[#2589D8] transition">Software mit KI</Link>
-            <Link to="/participation" className="text-slate-600 font-medium hover:text-[#2589D8] transition">Beteiligung</Link>
-            <Link to="/community" className="text-slate-600 font-medium hover:text-[#2589D8] transition">Community</Link>
+            <Link
+              to="/learning-ai"
+              className={`font-medium transition ${location.pathname === '/learning-ai'
+                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+                : 'text-slate-600 hover:text-[#2589D8]'
+                }`}
+            >
+              Lernen & KI
+            </Link>
+            <Link
+              to="/software-ai"
+              className={`font-medium transition ${location.pathname === '/software-ai'
+                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+                : 'text-slate-600 hover:text-[#2589D8]'
+                }`}
+            >
+              Software mit KI
+            </Link>
+            <Link
+              to="/participation"
+              className={`font-medium transition ${location.pathname === '/participation'
+                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+                : 'text-slate-600 hover:text-[#2589D8]'
+                }`}
+            >
+              Beteiligung
+            </Link>
+            <Link
+              to="/community"
+              className={`font-medium transition ${location.pathname === '/community'
+                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+                : 'text-slate-600 hover:text-[#2589D8]'
+                }`}
+            >
+              Community
+            </Link>
 
             <div className="h-6 w-px bg-slate-300 mx-2"></div>
 
-            <Link to="/about-us" className="text-slate-600 font-medium hover:text-[#2589D8] transition">Über uns</Link>
-            <Link to="/blog" className="text-slate-600 font-medium hover:text-[#2589D8] transition">Blog</Link>
+            <Link
+              to="/about-us"
+              className={`font-medium transition ${location.pathname === '/about-us'
+                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+                : 'text-slate-600 hover:text-[#2589D8]'
+                }`}
+            >
+              Über uns
+            </Link>
+            <Link
+              to="/blog"
+              className={`font-medium transition ${location.pathname === '/blog'
+                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+                : 'text-slate-600 hover:text-[#2589D8]'
+                }`}
+            >
+              Blog
+            </Link>
             <a
               href="mailto:lars@innovation-pflegen.de"
               className="bg-gradient-to-r from-[#2589D8] to-[#38B481] text-white px-6 py-2.5 rounded-xl font-bold hover:shadow-lg hover:scale-105 transition-all text-sm"
@@ -83,11 +131,56 @@ const Navbar: React.FC = () => {
 
       {isOpen && (
         <div className="lg:hidden bg-white border-b border-slate-200 p-6 space-y-4 shadow-xl animate-in fade-in slide-in-from-top-4">
-          <Link to="/learning-ai" onClick={() => setIsOpen(false)} className="block w-full text-left py-2 text-lg font-medium text-slate-600">Lernen & KI</Link>
-          <Link to="/software-ai" onClick={() => setIsOpen(false)} className="block w-full text-left py-2 text-lg font-medium text-slate-600">Software mit KI</Link>
-          <Link to="/participation" onClick={() => setIsOpen(false)} className="block w-full text-left py-2 text-lg font-medium text-slate-600">Beteiligung</Link>
-          <Link to="/community" onClick={() => setIsOpen(false)} className="block w-full text-left py-2 text-lg font-medium text-slate-600">Community</Link>
-          <Link to="/about-us" onClick={() => setIsOpen(false)} className="block w-full text-left py-2 text-lg font-medium text-slate-600">Über uns</Link>
+          <Link
+            to="/learning-ai"
+            onClick={() => setIsOpen(false)}
+            className={`block w-full text-left py-2 text-lg font-medium ${location.pathname === '/learning-ai'
+                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+                : 'text-slate-600'
+              }`}
+          >
+            Lernen & KI
+          </Link>
+          <Link
+            to="/software-ai"
+            onClick={() => setIsOpen(false)}
+            className={`block w-full text-left py-2 text-lg font-medium ${location.pathname === '/software-ai'
+                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+                : 'text-slate-600'
+              }`}
+          >
+            Software mit KI
+          </Link>
+          <Link
+            to="/participation"
+            onClick={() => setIsOpen(false)}
+            className={`block w-full text-left py-2 text-lg font-medium ${location.pathname === '/participation'
+                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+                : 'text-slate-600'
+              }`}
+          >
+            Beteiligung
+          </Link>
+          <Link
+            to="/community"
+            onClick={() => setIsOpen(false)}
+            className={`block w-full text-left py-2 text-lg font-medium ${location.pathname === '/community'
+                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+                : 'text-slate-600'
+              }`}
+          >
+            Community
+          </Link>
+          <Link
+            to="/about-us"
+            onClick={() => setIsOpen(false)}
+            className={`block w-full text-left py-2 text-lg font-medium ${location.pathname === '/about-us'
+                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+                : 'text-slate-600'
+              }`}
+          >
+            Über uns
+          </Link>
           <a href="mailto:lars@innovation-pflegen.de" className="block w-full text-center bg-gradient-to-r from-[#2589D8] to-[#38B481] text-white px-5 py-3 rounded-xl font-bold">Projekt anfragen</a>
         </div>
       )}
