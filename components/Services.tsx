@@ -76,7 +76,7 @@ const Services: React.FC = () => {
         </svg>
       ),
       colorClass: "bg-gradient-to-br from-indigo-500 to-purple-600",
-      path: "https://ki-und-lernen.innovation-pflegen.de"
+      path: "/learning-ai"
     },
     {
       title: "Coaching in der Pflege",

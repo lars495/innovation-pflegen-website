@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-black mb-8 tracking-tight text-[#38B481]">Service</h4>
             <ul className="space-y-4 text-slate-400 text-sm font-medium">
-              <li><a href="https://ki-und-lernen.innovation-pflegen.de" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">Hackathons</a></li>
+              <li><Link to="/learning-ai" className="hover:text-white transition">Hackathons</Link></li>
               <li><Link to="/career" className="hover:text-white transition">Coaching</Link></li>
               <li><Link to="/e-learning" className="hover:text-white transition">E-Learning</Link></li>
               <li><Link to="/learning-ai" className="hover:text-white transition">KI in der Pflege</Link></li>
