@@ -26,6 +26,7 @@ import KIKompetenzen from './pages/KIKompetenzen';
 import Coaching from './pages/Coaching';
 
 const Home: React.FC = () => {
+  // Home Component
   return (
     <>
       <section id="home">
