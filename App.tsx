@@ -24,6 +24,7 @@ import ThreeDPrint from './pages/ThreeDPrint';
 import ELearningPage from './pages/ELearning';
 import KIKompetenzen from './pages/KIKompetenzen';
 import Coaching from './pages/Coaching';
+import OffersPage from './pages/Offers';
 
 const Home: React.FC = () => {
   // Home Component
@@ -79,6 +80,7 @@ const App: React.FC = () => {
               <Route path="/e-learning" element={<ELearningPage />} />
               <Route path="/ki-kompetenzen" element={<KIKompetenzen />} />
               <Route path="/coaching" element={<Coaching />} />
+              <Route path="/angebote" element={<OffersPage />} />
             </Routes>
           )}
         </main>

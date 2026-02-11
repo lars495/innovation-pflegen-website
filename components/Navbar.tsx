@@ -87,7 +87,18 @@ const Navbar: React.FC = () => {
               Community
             </Link>
 
+
             <div className="h-6 w-px bg-slate-300 mx-2"></div>
+
+            <Link
+              to="/angebote"
+              className={`font-medium transition ${location.pathname === '/angebote'
+                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+                : 'text-slate-600 hover:text-[#2589D8]'
+                }`}
+            >
+              Angebote
+            </Link>
 
             <Link
               to="/about-us"
@@ -135,8 +146,8 @@ const Navbar: React.FC = () => {
             to="/learning-ai"
             onClick={() => setIsOpen(false)}
             className={`block w-full text-left py-2 text-lg font-medium ${location.pathname === '/learning-ai'
-                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
-                : 'text-slate-600'
+              ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+              : 'text-slate-600'
               }`}
           >
             Lernen & KI
@@ -145,8 +156,8 @@ const Navbar: React.FC = () => {
             to="/software-ai"
             onClick={() => setIsOpen(false)}
             className={`block w-full text-left py-2 text-lg font-medium ${location.pathname === '/software-ai'
-                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
-                : 'text-slate-600'
+              ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+              : 'text-slate-600'
               }`}
           >
             Software mit KI
@@ -155,8 +166,8 @@ const Navbar: React.FC = () => {
             to="/participation"
             onClick={() => setIsOpen(false)}
             className={`block w-full text-left py-2 text-lg font-medium ${location.pathname === '/participation'
-                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
-                : 'text-slate-600'
+              ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+              : 'text-slate-600'
               }`}
           >
             Beteiligung
@@ -165,18 +176,28 @@ const Navbar: React.FC = () => {
             to="/community"
             onClick={() => setIsOpen(false)}
             className={`block w-full text-left py-2 text-lg font-medium ${location.pathname === '/community'
-                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
-                : 'text-slate-600'
+              ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+              : 'text-slate-600'
               }`}
           >
             Community
           </Link>
           <Link
+            to="/angebote"
+            onClick={() => setIsOpen(false)}
+            className={`block w-full text-left py-2 text-lg font-medium ${location.pathname === '/angebote'
+              ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+              : 'text-slate-600'
+              }`}
+          >
+            Angebote
+          </Link>
+          <Link
             to="/about-us"
             onClick={() => setIsOpen(false)}
             className={`block w-full text-left py-2 text-lg font-medium ${location.pathname === '/about-us'
-                ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
-                : 'text-slate-600'
+              ? 'text-[#2589D8] font-bold underline decoration-2 underline-offset-4'
+              : 'text-slate-600'
               }`}
           >
             Über uns
