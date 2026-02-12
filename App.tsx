@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollToTopOnNavigate from './components/ScrollToTopOnNavigate';
 import CustomOffer from './components/CustomOffer';
+import ConstructionBanner from './components/ConstructionBanner';
 
 // Page Imports
 import LearningAI from './pages/LearningAI';
@@ -30,6 +31,7 @@ const Home: React.FC = () => {
   // Home Component
   return (
     <>
+      <ConstructionBanner />
       <section id="home">
         <Hero />
       </section>

@@ -4,14 +4,16 @@ import Hero from '../components/Hero';
 import Services from '../components/Services';
 import InnovationAssistant from '../components/InnovationAssistant';
 import About from '../components/About';
+import ConstructionBanner from '../components/ConstructionBanner';
 
 const Home: React.FC = () => {
   return (
     <>
+      <ConstructionBanner />
       <section id="home">
         <Hero />
       </section>
-      
+
       <section id="services" className="py-20 bg-white">
         <Services />
       </section>
